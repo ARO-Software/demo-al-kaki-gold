@@ -363,6 +363,7 @@ section{position:relative}
   opacity:0; transform:translateY(16px) scale(.85); pointer-events:none;
   transition:opacity .45s var(--ease), transform .45s var(--ease)}
 .fab.show{opacity:1; transform:none; pointer-events:auto}
+@media (prefers-reduced-motion:reduce){ .fab{transition:none} }
 .fab svg{width:29px; height:29px}
 .fab:hover{transform:translateY(-2px)}
 
@@ -408,6 +409,7 @@ section{position:relative}
 </style>
 <noscript><style>.rv,.he{opacity:1 !important; transform:none !important}
 .hero-bg img{opacity:1 !important; transform:none !important}</style></noscript>
+<noscript><style>.fab{opacity:1;transform:none;pointer-events:auto}</style></noscript>
 </head>
 <body>
 
@@ -765,7 +767,7 @@ section{position:relative}
 <!-- ============================ CONTACT ============================ -->
 <section class="sec contact" id="contact">
   <div class="contact-bg" aria-hidden="true">
-    <img src="assets/night.jpg" width="1200" height="1116" loading="lazy" alt="">
+    <img src="assets/night.jpg" width="1200" height="1116" loading="lazy" alt="واجهة معرض الكعكي للذهب والمجوهرات ليلاً">
   </div>
   <div class="shell">
     <div class="contact-box">
