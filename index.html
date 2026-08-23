@@ -65,7 +65,7 @@ button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
 
 /* numbers inside RTL prose: isolate atomically, symmetric gap */
 bdi{margin-inline:.25em; font-family:var(--ar-ui); font-variant-numeric:tabular-nums}
-bdi.tight{margin-inline:.08em}
+bdi.tight{margin-inline:.2em}
 
 .shell{width:var(--shell); margin-inline:auto}
 .lat{font-family:var(--lat); letter-spacing:.04em}
@@ -406,6 +406,7 @@ section{position:relative}
   .gi:hover img{transform:none}
   .scroll-hint i{animation:none; opacity:.5}
 }
+@media (prefers-reduced-motion:reduce){.fab{opacity:1!important;transform:none!important;pointer-events:auto!important}}
 </style>
 <noscript><style>.rv,.he{opacity:1 !important; transform:none !important}
 .hero-bg img{opacity:1 !important; transform:none !important}</style></noscript>
